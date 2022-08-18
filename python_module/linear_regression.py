@@ -1,11 +1,12 @@
-
-
-
+from sklearn.linear_model import LinearRegression
+from features_for_model import feat_eng, feat_eng_1,feat_eng_2
+from datetime import timedelta
+import numpy as np
 
 
 
 # новый код
-start_time = time.time()
+
 temp = train.copy()
 temp_4_pred = temp.copy()
 front_predict = len(test)
@@ -41,4 +42,3 @@ for i in range(front_predict):
     temp = temp_4_pred.copy()
 final_proverka = temp_4_pred.copy()
 final = temp_4_pred.copy().loc[len(final_proverka) - front_predict:][['date', 'Потребитель']]
-time_lr = time.time() - start_time
