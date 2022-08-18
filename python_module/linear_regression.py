@@ -1,7 +1,29 @@
 from sklearn.linear_model import LinearRegression
-from features_for_model import feat_eng, feat_eng_1,feat_eng_2
+from features_for_model import feat_eng, feat_eng_1, feat_eng_2
 from datetime import timedelta
 import numpy as np
+import pandas as pd
+import click
+@click.command()
+@click.argument("input_pair_features_train_dataset_path", type=click.Path(exists=True))
+@click.argument("input_pair_features_test_dataset_path", type=click.Path(exists=True))
+@click.argument("output_model_path", type=click.Path())
+@click.argument("output_submission_path", type=click.Path())
+@click.argument("output_metrics_path", type=click.Path()
+def train_model(
+        input_pair_features_train_dataset_path: str,
+        input_pair_features_test_dataset_path: str,
+        output_model_path: str,
+        output_submission_path: str,
+        output_metrics_path: str,
+) -> None:
+    train = pd.read_excel(input_pair_features_train_dataset_path)
+    test = pd.read_excel(input_pair_features_test_dataset_path)
+    temp = train.copy()
+    temp_4_pred = temp.copy()
+    front_predict = len(test)
+    for i in range(front_predict):
+        temp_4_fit = temp.copy()
 
 
 
