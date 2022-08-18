@@ -11,8 +11,7 @@ def train_test_group_split_csv(
     input_raw_train_path: str,
     output_split_train_path: str,
     output_split_test_path: str,
-    train_size = 0.1,
-) -> None:
+    train_size = 0.1):
     """Разбиваем исходный train датасет на train/test.
     Args:
         input_raw_train_path (str): Путь до исходного датасета .csv (обычно train.csv)
@@ -33,4 +32,4 @@ def train_test_group_split_csv(
 
 
 if __name__ == "__main__":
-    train_test_group_split_csv()  # pylint: disable=E1120
+    train_test_group_split_csv()
