@@ -34,4 +34,17 @@
   
   г) завернуть проект в программу, данная тематика находится в процессе изучения
   
+  
+  
+  
+  Ближайшие задачи: 
+  
+  1) пофиксить модуль с предсказанием и добавить модуль с визуализацией
+  
+  2) сделать шаблон cookiecutter
+  
+  3) запустить код через click (https://digitology.tech/posts/napisanie-python-utilit-komandnoj-stroki-s-click/) 
+  
+  4) https://yandex.ru/q/loves/machine-learning/
+ 
 
