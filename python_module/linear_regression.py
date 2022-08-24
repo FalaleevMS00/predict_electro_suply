@@ -58,7 +58,7 @@ def train_model(
         temp = temp_4_pred.copy()
     final_test = temp_4_pred.copy()
     final = temp_4_pred.copy().loc[len(final_test) - front_predict:][['date', 'Потребитель']]
-    final.to_excel(output_predict_dataset_path, index = False)
+    final.to_excel(output_predict_dataset_path, index=False)
 
 if __name__ == "__main__":
     train_model()
