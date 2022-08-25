@@ -102,7 +102,9 @@ Project Organization
   
   2) сделать шаблон cookiecutter
   
-  3) запустить код через click (https://digitology.tech/posts/napisanie-python-utilit-komandnoj-stroki-s-click/) 
+  3) запустить код через click (https://digitology.tech/posts/napisanie-python-utilit-komandnoj-stroki-s-click/), ошибка с путем файла, в процессе исправления 
+  
+  3) посмотреть видео и сделать пайплайн через dvc https://www.youtube.com/watch?v=71IGzyH95UY&t=3s
   
   4) https://yandex.ru/q/loves/machine-learning/
  
