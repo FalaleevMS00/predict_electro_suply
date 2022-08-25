@@ -11,7 +11,7 @@ def clean_data(input_path: str, output_path: str):
     :param input_path: path with input data
     :param output_path: path to save file
     """
-    data = pd.read_csv(input_path)
+    data = pd.read_excel(input_path)
 # обработка 24 часа
     data.loc[(data['часы'] == 24), 'Дата'] = data.loc[(data['часы'] == 24), 'Дата'] + timedelta(days=1)
     data.loc[(data['часы'] == 24), 'часы'] = 0
